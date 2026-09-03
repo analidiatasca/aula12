@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styled from "styled-components"
 import { useState } from "react"
 import ConteudoInicial from "../datas/ConteudoInicial"
@@ -68,3 +69,13 @@ export default function Formulario() {
         </ModeloInterno>
     </Modelo>
 }
+=======
+import styled from "styled-components"
+
+const Modelo = styled.div`
+    backgound: #fff;
+    border-radius: 4px;
+    color: #222;
+    padding: 32px;
+`
+>>>>>>> 8e753d43b874ed5e1b8a3773b49268590151be74
