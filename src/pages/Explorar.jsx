@@ -1,7 +1,7 @@
 import Navegacao from "../components/Navegacao"
 import Destaque from "../components/Destaque"
 import fundo from "../assets/fundo.jpg"
-//import Sessao from "../components/Sessao"
+import Sessao from "../components/Sessao"
 import ObterConteudos from "../functions/ObterConteudos"
 import ObterGeneros from "../functions/ObterGeneros"
 import { useEffect, useState } from "react"
@@ -42,11 +42,11 @@ export default function Explorar() {
         <Navegacao/>
         { generos.length > 0 && 
         generos.map(function(genero, indice) {
-          return <Sessao 
+          return <Sessao>
           key={ indice }
           genero={ genero }
           conteudo={ conteudos }
-          />
+          </Sessao>
         })
         }
     </Destaque>

@@ -1,5 +1,7 @@
+import Principal from "../components/Principal"
+
 export default function Inicio() {
-    return <>
-    <h1> Inicio </h1>
-    </>
+    return < Principal fundo="/fundo.jpg" tamanho="480px">
+        </Principal>
+
 }
