@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Principal from "../components/Principal";
 import Reprodutor from "../components/Reprodutor";
+import fundo from "../assets/fundo.jpg";
 
 
 export default function Video() {
@@ -25,7 +26,7 @@ export default function Video() {
   return (
     <>
       {conteudo && (
-        <Principal fundo={conteudo.capa} tamanho="700px">
+        <Principal fundo={fundo} tamanho="700px">
           <Reprodutor conteudo={conteudo} />
         </Principal>
       )}

@@ -4,12 +4,31 @@ import { useState } from "react"
 import ConteudoInicial from "../datas/ConteudoInicial"
 import SalvarConteudo from "../functions/SalvarConteudo"
 
+const Container = styled.div`
+  min-height: 220px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #832121;
+`;
 
 const Modelo = styled.div`
-    backgound: #fff;
-    border-radius: 4px;
-    color: #222;
-    padding: 32px;
+background: #f15555;
+  border-radius: 16px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+  width: min(90%, 380px);
+  padding: 35px 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #7a1717;
 `
 
 const ModeloInterno = styled.form`
@@ -45,27 +64,29 @@ export default function Formulario() {
       definirConteudo(ConteudoInicial)
     }
 
-    return <Modelo>
+    return <Container>
+    <Modelo>
         <ModeloInterno onSubmit={ Enviar }>
             <input value={ conteudo.capa } onChange={ Mudar }
-            type="url" name="capa" placeholder="Capa" required/>
+            type="url" name="capa" placeholder="Capa" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.trilha } onChange={ Mudar }
-            type="url" name="trilha" placeholder="Trilha" required/>
+            type="url" name="trilha" placeholder="Trilha" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.titulo } onChange={ Mudar }
-            type="text" name="titulo" placeholder="Título" required/>
+            type="text" name="titulo" placeholder="Título" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.descricao } onChange={ Mudar }
-            type="text" name="descricao" placeholder="Descrição..." required/>
+            type="text" name="descricao" placeholder="Descrição..." required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.genero } onChange={ Mudar }
-            type="text" name="genero" placeholder="Gênero" required/>
+            type="text" name="genero" placeholder="Gênero" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.ano } onChange={ Mudar }
-            type="number" name="ano" placeholder="Ano (ex.: 2020)" required/>
+            type="number" name="ano" placeholder="Ano (ex.: 2020)" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.duracao } onChange={ Mudar }
             type="number" name="duracao"
-            placeholder="Duração (ex.: 90min)" required/>
+            placeholder="Duração (ex.: 90min)" required style={{ background: '#531717', color: 'white' }}/>
             <input value={ conteudo.faixa } onChange={ Mudar }
             type="number" name="faixa"
-            placeholder="Faixa etária (ex.: +18)" required/>
-            <input type="submit" value="Enviar" />
+            placeholder="Faixa etária (ex.: +18)" required style={{ background: '#531717', color: 'white' }}/>
+            <input type="submit" value="Enviar" style={{ background: '#531717', color: 'white' }} />
         </ModeloInterno>
     </Modelo>
+    </Container>
 }

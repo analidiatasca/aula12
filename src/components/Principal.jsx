@@ -5,7 +5,7 @@ const Modelo = styled.div`
     background-image: URL(${props => props.fundo});
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 180vh;
 `
 
 const Barra = styled.div`
