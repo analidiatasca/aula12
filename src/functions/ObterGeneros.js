@@ -3,65 +3,7 @@ import axios from "axios";
 export default function ObterGeneros() {
     return axios({
         method: "GET",
-        url: "https://localhost:4000/generos",
+        url: "http://localhost:4000/generos",
     })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//67

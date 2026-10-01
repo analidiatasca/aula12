@@ -7,10 +7,12 @@ import ObterGeneros from "../functions/ObterGeneros"
 import { useEffect, useState } from "react"
 
 export default function Explorar() {
+
     const [conteudos, setConteudos] = useState([])
     const [generos, setGeneros] = useState([])
     
     useEffect(function() {
+
         ObterConteudos()
         .then(function(resposta) {
            if (resposta.status === 200) 
@@ -21,6 +23,7 @@ export default function Explorar() {
         .catch(function(erro) {
           console.log(erro)
         })
+
         ObterGeneros()
         .then(function(resposta) {
             if (resposta.status === 200)
@@ -42,11 +45,11 @@ export default function Explorar() {
         <Navegacao/>
         { generos.length > 0 && 
         generos.map(function(genero, indice) {
-          return <Sessao>
+          return <Sessao
           key={ indice }
           genero={ genero }
           conteudo={ conteudos }
-          </Sessao>
+          />
         })
         }
     </Destaque>
