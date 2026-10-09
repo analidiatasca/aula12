@@ -48,7 +48,7 @@ export default function Explorar() {
           return <Sessao
           key={ indice }
           genero={ genero }
-          conteudo={ conteudos }
+          conteudos={ conteudos }
           />
         })
         }
