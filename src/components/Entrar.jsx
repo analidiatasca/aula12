@@ -156,6 +156,7 @@ export default function Entrar() {
             value="Entrar"
           />
         </Formulario>
+        <a href="/cadastro"> Não tem conta? Cadastre-se </a>
       </Modelo>
     </Container>
   );

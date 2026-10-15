@@ -32,7 +32,7 @@ background: #f15555;
 `
 
 const ModeloInterno = styled.form`
-    display: felx;
+    display: flex;
     flex-direction: column;
     gap: 16px;
 `

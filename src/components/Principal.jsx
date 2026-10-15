@@ -9,7 +9,7 @@ const Modelo = styled.div`
 `
 
 const Barra = styled.div`
-    background: linear-gradient(pink, transparente);
+    background: linear-gradient(pink, transparent);
     padding: 32px;
 `
 
